@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".ProvinceDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/colorPrimaryDark"
+        ></androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="164dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:id="@+id/img_logo_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    tools:src="@color/colorPrimaryDark"></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/informasi_umum"
+                    android:textColor="#BDBDBD"
+                    android:textSize="10dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="Nama" />
+
+                        <TextView
+                            style="@style/TextSpec.col"
+                            android:text=":  " />
+
+                        <TextView
+                            android:id="@+id/nama_provinsi"
+                            style="@style/TextSpec.Value"
+                            android:text="Nama Provinsi" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="@string/ibu_kota" />
+
+                        <TextView
+                            style="@style/TextSpec.col"
+                            android:text=":  " />
+
+                        <TextView
+                            android:id="@+id/ibu_kota_provinsi"
+                            style="@style/TextSpec.Value"
+                            android:text="@string/ibu_kota_provinsi" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="@string/penduduk" />
+
+                        <TextView
+                            style="@style/TextSpec.col"
+                            android:text=":  " />
+
+                        <TextView
+                            android:id="@+id/penduduk_provinsi"
+                            style="@style/TextSpec.Value"
+                            android:text="200" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="@string/luas_provinsi" />
+
+                        <TextView
+                            style="@style/TextSpec.col"
+                            android:text=":  " />
+
+                        <TextView
+                            android:id="@+id/luas_provinsi"
+                            style="@style/TextSpec.Value"
+                            android:text="300" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="@string/jumlah_kabupaten" />
+
+                        <TextView
+                            style="@style/TextSpec.col"
+                            android:text=":  " />
+
+                        <TextView
+                            android:id="@+id/jml_kabupaten"
+                            style="@style/TextSpec.Value"
+                            android:text="300" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="@string/jumlah_kota" />
+
+                        <TextView
+                            style="@style/TextSpec.col"
+                            android:text=":  " />
+
+                        <TextView
+                            android:id="@+id/jml_kota"
+                            style="@style/TextSpec.Value"
+                            android:text="300" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/deskripsi"
+                        android:textColor="#BDBDBD"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/detail_provinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="detail provinsi"
+                        android:textAlignment="textStart"
+                        android:textColor="#000"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_view_details"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn1"
+                android:shadowRadius="30"
+                android:text="@string/lihat_details"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

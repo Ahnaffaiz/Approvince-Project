@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">APPROVINCE</string>
+    <string name="kota">Nama Ibu Kota</string>
+    <string name="province_name">Nama Provinsi</string>
+    <string name="informasi_umum">Informasi Umum</string>
+    <string name="ibu_kota">Ibu kota</string>
+    <string name="ibu_kota_provinsi">Ibu Kota Provinsi</string>
+    <string name="penduduk">penduduk</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="luas_provinsi">Luas Provinsi</string>
+    <string name="jumlah_kabupaten">Jumlah Kabupaten</string>
+    <string name="jumlah_kota">Jumlah Kota</string>
+    <string name="lihat_details">Lihat Details</string>
+
+</resources>

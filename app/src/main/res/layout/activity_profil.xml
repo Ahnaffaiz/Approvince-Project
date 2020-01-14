@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_background"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetStart="100dp"
+        app:titleTextColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photo_profil"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:elevation="4dp"
+                android:src="@drawable/myphoto"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Faiz Ahnaf"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+
+                >
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="24dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/btn2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-light"
+                    android:text="faiz.putra553@gmail.com"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/general_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarProfil"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/informasi_umum"
+                android:textColor="#BDBDBD"
+                android:textSize="10dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Fullname" />
+
+                    <TextView
+                        style="@style/TextSpec.col"
+                        android:text=":  " />
+
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:text="Faiz Ahnaf Eka Putra" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Date of Birth" />
+
+                    <TextView
+                        style="@style/TextSpec.col"
+                        android:text=":  " />
+
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:text="26 March 2000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Place of Birth" />
+
+                    <TextView
+                        style="@style/TextSpec.col"
+                        android:text=":  " />
+
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:text="Sragen" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Address" />
+
+                    <TextView
+                        style="@style/TextSpec.col"
+                        android:text=":  " />
+
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:text="Ngrendeng, RT 18 kaloran, Gemolong, Sragen" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Religion" />
+
+                    <TextView
+                        style="@style/TextSpec.col"
+                        android:text=":  " />
+
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:text="Moeslim" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Gender" />
+
+                    <TextView
+                        style="@style/TextSpec.col"
+                        android:text=":  " />
+
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:text="Male" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Language" />
+
+                    <TextView
+                        style="@style/TextSpec.col"
+                        android:text=":  " />
+
+                    <TextView
+                        style="@style/TextSpec.Value"
+                        android:text="Bahasa Indonesia, English" />
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+     
+
+
+</RelativeLayout>
